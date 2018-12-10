@@ -8,14 +8,14 @@ path                  = require 'path'
 Configuration = (options = {}) ->
 
   options.domains =
-    base: options.hostname ? 'koding.com'
+    base: options.hostname ? 'ide.truongvo.info'
     mail: 'koding.com'
-    main: options.host ? 'dev.koding.com'
+    main: options.host ? 'ide.truongvo.info'
     port: '8090'
 
   options.serviceHost or= '127.0.0.1'
   options.publicPort or= '8090'
-  options.hostname or= 'dev.koding.com'
+  options.hostname or= 'ide.truongvo.info'
   options.protocol or= 'http:'
   options.publicHostname or= "#{options.protocol}//#{options.hostname}"
   options.region or= 'default'
