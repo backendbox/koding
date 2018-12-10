@@ -8,14 +8,14 @@ path                  = require 'path'
 Configuration = (options = {}) ->
 
   options.domains =
-    base: options.hostname ? 'koding.com'
-    mail: 'koding.com'
-    main: options.host ? 'dev.koding.com'
+    base: options.hostname ? 'ide.truongvo.info'
+    mail: 'ide.truongvo.info'
+    main: options.host ? 'ide.truongvo.info'
     port: '8090'
 
   options.serviceHost or= '127.0.0.1'
   options.publicPort or= '8090'
-  options.hostname or= 'dev.koding.com'
+  options.hostname or= 'ide.truongvo.info'
   options.protocol or= 'http:'
   options.publicHostname or= "#{options.protocol}//#{options.hostname}"
   options.region or= 'dev'
@@ -43,7 +43,7 @@ Configuration = (options = {}) ->
   options.clientUploadS3BucketName = 'kodingdev-client'
   options.publicLogsS3BucketName or= 'kodingdev-publiclogs'
   options.proxySubdomain or= 'dev-p'
-  options.userProxyHost or= "#{options.proxySubdomain}.koding.com"
+  options.userProxyHost or= "#{options.proxySubdomain}.ide.truongvo.info"
   options.userProxyUri or= "#{options.userProxyHost}/-/devproxy"
   options.userTunnelUri or= "#{options.userProxyHost}/-/devtunnel"
   options.watchNode = yes
